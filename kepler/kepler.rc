@@ -1,0 +1,253 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)\r\n"
+    "LANGUAGE 25, 1\r\n"
+    "#pragma code_page(1251)\r\n"
+    "#include ""res\\kepler.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\kepler.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About kepler"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "kepler Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_KEPLER_DIALOG DIALOGEX 0, 0, 862, 397
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "kepler"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Траектория",IDC_TRA,7,7,644,286
+    EDITTEXT        IDC_xwin,670,208,42,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_xkm,669,158,43,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_vxwin,765,207,37,21,ES_AUTOHSCROLL
+    EDITTEXT        IDC_vxkm,763,158,36,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ywin,719,208,38,19,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ykm,718,158,38,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_vywin,809,208,38,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_vykm,804,157,43,18,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,685,194,17,10
+    LTEXT           "Y",IDC_STATIC,733,195,17,10
+    LTEXT           "Vx",IDC_STATIC,777,195,17,10
+    LTEXT           "Vy",IDC_STATIC,821,195,17,10
+    PUSHBUTTON      "Start",IDC_START,801,7,54,16
+    PUSHBUTTON      "Stop",IDC_STOP,801,25,54,16
+    EDITTEXT        IDC_a,681,17,54,25,ES_AUTOHSCROLL
+    EDITTEXT        IDC_b,683,55,53,26,ES_AUTOHSCROLL
+    EDITTEXT        IDC_eks,682,92,53,25,ES_AUTOHSCROLL
+    LTEXT           "Большая полуось",IDC_STATIC,740,17,50,18
+    LTEXT           "dt",IDC_STATIC,832,61,23,18
+    LTEXT           "Малая полуось",IDC_STATIC,742,58,50,18
+    EDITTEXT        IDC_eMed,685,246,91,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_T,795,245,35,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Kepler3,687,277,92,15,ES_AUTOHSCROLL
+    LTEXT           "E.откл",IDC_STATIC,687,234,34,10
+    LTEXT           "T(сутки)",IDC_STATIC,797,234,29,10
+    LTEXT           "T^2/a^3",IDC_STATIC,686,263,41,10
+    GROUPBOX        "энергия кинетическая, потенциальная и полная",IDC_EnergyG,124,299,488,91
+    EDITTEXT        IDC_dt,781,57,49,25,ES_AUTOHSCROLL
+    LTEXT           "эксцентриситет",IDC_STATIC,737,96,57,18
+    LTEXT           "t",IDC_STATIC,614,380,17,10
+    LTEXT           "Начальные условия.",IDC_STATIC,719,133,95,18
+    LTEXT           "Xo",IDC_STATIC,683,146,19,11
+    LTEXT           "Yo",IDC_STATIC,725,147,17,10
+    LTEXT           "Vxo",IDC_STATIC,769,146,17,10
+    LTEXT           "Vyo",IDC_STATIC,817,145,17,10
+    LTEXT           "Координаты в реальном времени.",IDC_STATIC,705,179,124,18
+    EDITTEXT        IDC_eCineticNow,631,319,92,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_eFullNow,630,375,92,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ePotentialNow,631,346,92,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ePotentialMax,741,347,92,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_eCineticMax,742,320,92,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_eFullMax,741,375,92,15,ES_AUTOHSCROLL
+    LTEXT           "Кинетическая моментальная",IDC_STATIC,630,304,98,10
+    LTEXT           "Потенциальная моментальная",IDC_STATIC,629,335,106,10
+    LTEXT           "Полная моментальная",IDC_STATIC,630,363,106,10
+    LTEXT           "Кинетическая max",IDC_STATIC,757,307,79,10
+    LTEXT           "Потенциальная max",IDC_STATIC,749,336,82,10
+    LTEXT           "Полная max",IDC_STATIC,758,364,65,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "kepler.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "kepler.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_KEPLER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 855
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 390
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_KEPLER_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About kepler..."
+END
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE 25, 1
+#pragma code_page(1251)
+#include "res\kepler.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
